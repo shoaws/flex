@@ -27,7 +27,46 @@ main{
   display: flex;
   justify-content: center;
 }
-.main-box1{
+
+main>div:nth-child(1){
   background-color: #98fb98;
   width: 300px;
+  flex-grow: 0;
+}
+
+main>div:nth-child(2){
+  background-color: green;
+  padding: 20px;
+  flex-grow: 1;
+  max-width: 700px;
+  display: flex;
+  flex-wrap:wrap;
+}
+
+.main-box2>div{
+  background-color: yellow;
+  flex-basis: 200px;
+  height: 130px;
+  margin: 10px;
+}
+
+footer{
+  background-color: #1e90ff;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+footer>div{
+  background-color: #e0ffff;
+  margin: 10px;
+  height: 40px;
+  flex-basis: 45%;
+  max-width: 600px;
+}
+
+footer>div:last-child{
+  align-self: end;
 }
